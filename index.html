@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catálogo Bella | Perfumes, Maquillaje y Cuidado Personal</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            <span>✦</span>
+            Bella
+            <small>CATÁLOGO</small>
+        </div>
+
+        <nav class="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#marcas">Marcas</a>
+            <a href="#ofertas">Ofertas</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button id="btnBuscar" class="icon-btn">
+                🔎
+            </button>
+
+            <button id="btnFavoritos" class="icon-btn">
+                ♡
+                <span id="contadorFavoritos">0</span>
+            </button>
+
+            <button id="btnCarrito" class="cart-btn">
+                🛒
+                <span id="contadorCarrito">0</span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= BUSCADOR ================= -->
+
+    <div id="searchBox" class="search-box">
+
+        <input
+            type="text"
+            id="buscador"
+            placeholder="Buscar perfumes, maquillaje, cremas..."
+        >
+
+    </div>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section id="inicio" class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-subtitle">
+                ✦ CATÁLOGO DE BELLEZA ✦
+            </p>
+
+            <h1>
+                Todo lo que buscas
+                <span>en un solo lugar</span>
+            </h1>
+
+            <p>
+                Perfumes, maquillaje, cuidado personal y mucho más.
+                Descubre nuestros productos y realiza tu pedido fácilmente.
+            </p>
+
+            <a href="#productos" class="btn-primary">
+                Ver catálogo
+            </a>
+
+        </div>
+
+        <div class="hero-decoration">
+            ✿
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORÍAS ================= -->
+
+    <section class="categorias">
+
+        <div class="section-title">
+
+            <p>DESCUBRE</p>
+
+            <h2>
+                Compra por categoría
+            </h2>
+
+        </div>
+
+        <div class="category-grid">
+
+            <button class="category-card" data-categoria="Perfumes">
+                <span>🌸</span>
+                <strong>Perfumes</strong>
+                <small>Fragancias</small>
+            </button>
+
+            <button class="category-card" data-categoria="Maquillaje">
+                <span>💄</span>
+                <strong>Maquillaje</strong>
+                <small>Labiales y más</small>
+            </button>
+
+            <button class="category-card" data-categoria="Cuidado">
+                <span>🧴</span>
+                <strong>Cuidado</strong>
+                <small>Piel y cuerpo</small>
+            </button>
+
+            <button class="category-card" data-categoria="Accesorios">
+                <span>💎</span>
+                <strong>Accesorios</strong>
+                <small>Complementos</small>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MARCAS ================= -->
+
+    <section id="marcas" class="marcas">
+
+        <p>MARCAS DISPONIBLES</p>
+
+        <div class="brand-list">
+
+            <span>CYZONE</span>
+            <span>ÉSІKA</span>
+            <span>YANBAL</span>
+            <span>OTROS</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTOS ================= -->
+
+    <section id="productos" class="productos-section">
+
+        <div class="section-heading">
+
+            <div>
+
+                <p>NUESTRO CATÁLOGO</p>
+
+                <h2>
+                    Productos destacados
+                </h2>
+
+            </div>
+
+            <select id="filtroMarca">
+
+                <option value="Todos">
+                    Todas las marcas
+                </option>
+
+                <option value="Cyzone">
+                    Cyzone
+                </option>
+
+                <option value="Ésika">
+                    Ésika
+                </option>
+
+                <option value="Yanbal">
+                    Yanbal
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div id="productosGrid" class="products-grid">
+
+            <!-- JavaScript cargará los productos -->
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= OFERTA ================= -->
+
+    <section id="ofertas" class="oferta">
+
+        <div>
+
+            <p>✨ PROMOCIONES ESPECIALES ✨</p>
+
+            <h2>
+                Encuentra tus favoritos
+                a precios increíbles
+            </h2>
+
+            <p>
+                Consulta nuestras promociones y disponibilidad.
+            </p>
+
+            <button class="btn-primary" id="btnOferta">
+                Consultar ofertas
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            ✦ Bella
+        </div>
+
+        <p>
+            Catálogo de productos de belleza y cuidado personal.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#marcas">Marcas</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Bella Catálogo · Todos los derechos reservados
+        </p>
+
+    </footer>
+
+
+    <!-- ================= CARRITO ================= -->
+
+    <div id="overlay" class="overlay"></div>
+
+    <aside id="carrito" class="carrito">
+
+        <div class="carrito-header">
+
+            <h2>
+                🛒 Mi carrito
+            </h2>
+
+            <button id="cerrarCarrito">
+                ✕
+            </button>
+
+        </div>
+
+        <div id="carritoItems" class="carrito-items">
+
+            <p class="carrito-vacio">
+                Tu carrito está vacío.
+            </p>
+
+        </div>
+
+        <div class="carrito-footer">
+
+            <div class="total">
+
+                <span>Total</span>
+
+                <strong id="totalCarrito">
+                    S/ 0.00
+                </strong>
+
+            </div>
+
+            <button id="btnWhatsApp" class="btn-whatsapp">
+                💬 Pedir por WhatsApp
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MODAL PRODUCTO ================= -->
+
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+
+            <button id="cerrarModal" class="modal-close">
+                ✕
+            </button>
+
+            <img id="modalImagen" src="" alt="Producto">
+
+            <div class="modal-info">
+
+                <span id="modalMarca"></span>
+
+                <h2 id="modalNombre"></h2>
+
+                <p id="modalDescripcion"></p>
+
+                <strong id="modalPrecio"></strong>
+
+                <button id="modalAgregar" class="btn-primary">
+                    Agregar al carrito
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
